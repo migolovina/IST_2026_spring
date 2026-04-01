@@ -36,7 +36,7 @@ def decrypt_caesar(ciphertext: str, shift: int = 3) -> str:
     ''
     """
     plaintext = ""
-    return caesar.encrypt_caesar(chiphertext, -shift)
+    return caesar.encrypt_caesar(ciphertext, -shift)
 
 
 def caesar_breaker_brute_force(ciphertext: str, dictionary: tp.Set[str]) -> int:
