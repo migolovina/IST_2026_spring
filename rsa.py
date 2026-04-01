@@ -49,7 +49,7 @@ def multiplicative_inverse(e: int, phi: int) -> int:
     >>> multiplicative_inverse(7, 40)
     23
     """
-   d, x1, x2 = 0, 0, 1
+    d, x1, x2 = 0, 0, 1
     y1, y2 = 1, 0
     original_phi = phi
     while e>0:
@@ -71,10 +71,11 @@ def generate_keypair(p: int, q: int) -> tp.Tuple[tp.Tuple[int, int], tp.Tuple[in
     elif p == q:
         raise ValueError("p and q cannot be equal")
 
-    # n = pq
-    n=p*q
-    phi=(p-1)(q-1)
+    n = p * q
+    phi = (p - 1) * (q - 1)
+
     
+    # n = pq
 
     # phi = (p-1)(q-1)
     # PUT YOUR CODE HERE
